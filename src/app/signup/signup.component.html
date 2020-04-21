@@ -1,0 +1,9 @@
+<h3>Sign Up</h3>
+<form #signup = "ngForm" (ngSubmit) = "onClickSubmit()" autocomplete="off">
+    <input type = "text" name="email" placeholder="Email" [(ngModel)] = "details.mail" required #spy><br/><br/>
+    <input type = "password" name="password" placeholder="Password" [(ngModel)] = "details.pass" required><br/><br/>
+    <input type = "password" name="cnfpassword" placeholder="Confirm Password" ngModel required><br/><br/>
+    <input type="submit" value="Submit">
+</form>
+<p>{{spy.className}}</p>
+<p>Email: {{details.mail}}</p>

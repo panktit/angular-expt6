@@ -1,0 +1,18 @@
+<h3>Custom Directives</h3>
+<ul>
+    <li>
+        <h4>Custom Attribute Directive</h4>
+        <h4>Pick a color</h4>
+        <div>
+            <input type="radio" name="colors" (click)="color='darksalmon'">Dark Salmon
+            <input type="radio" name="colors" (click)="color='darkcyan'">Dark Cyan
+            <input type="radio" name="colors" (click)="color='crimson'">Crimson
+        </div>
+        <p [appHighlight]="color">Hover over me to highlight!</p>
+    </li>
+    <li>
+        <h4>Custom Structural Directive</h4>
+        <p *appNot="true">Display when condition is True</p>
+        <p *appNot="false">Display when condition is False</p>
+    </li>
+</ul>

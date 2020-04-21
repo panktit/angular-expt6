@@ -1,0 +1,32 @@
+<h3>Inbuild Pipes</h3>
+<ul>
+    <li>
+        <h4>JSON Pipe</h4>
+        <p>Items array: {{ items | json }}</p>
+    </li>
+    <li>
+        <h4>Currency Pipe & Titlecase Pipe</h4>
+        <table>
+            <tr>
+                <th>Item Id</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+            <tr *ngFor = "let item of items">
+                <td>{{item.id}}</td>
+                <td>{{item.name | uppercase}}</td>
+                <td>{{item.price | currency:'INR'}}</td>
+            </tr>
+        </table>
+    </li>
+</ul>
+<h3>Custom Pipes</h3>
+<ul>
+    <li>
+        <h4>Pipe takes a JSON object as input and returns its name field in titlecase</h4>
+        <h4>Item Name</h4>
+        <span *ngFor = "let item of items">
+            {{item | name | display}}<br/>
+        </span>
+    </li>
+</ul>

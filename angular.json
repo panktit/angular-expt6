@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-expt6"
+    }
+  },
+  "defaultProject": "angular-expt6",
+  "cli": {
+    "analytics": "14e3d4c4-34d6-4a9d-a538-b47fecacbfe9"
+  }
 }
